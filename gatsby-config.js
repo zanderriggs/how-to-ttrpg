@@ -3,6 +3,5 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "how-to-ttrpg",
   },
-  plugins: ["gatsby-plugin-gatsby-cloud"],
-           ["gatsby-plugin-sass"],
+  plugins: ["gatsby-plugin-gatsby-cloud","gatsby-plugin-sass"],
 };
