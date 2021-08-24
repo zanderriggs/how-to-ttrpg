@@ -4,4 +4,5 @@ module.exports = {
     title: "how-to-ttrpg",
   },
   plugins: ["gatsby-plugin-gatsby-cloud"],
+           ["gatsby-plugin-sass"],
 };
