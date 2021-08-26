@@ -1,5 +1,63 @@
 /*test style*/
 
-.customClass {
-    color: red;
+
+.pageStyles {
+    color: "#232129";
+    padding: 96;
+    font-family: "-apple-system, Roboto, sans-serif, serif";
+}
+
+.headingStyles {
+    margin-top: 0;
+    margin-bottom: 64;
+    max-width: 400;
+}
+
+.headingAccentStyles {
+    color: "#663399";
+}
+
+.paragraphStyles {
+    margin-bottom: 48;
+}
+
+.codeStyles {
+    color: "#8A6534";
+    padding: 4;
+    background-color: "#FFF4DB";
+    font-size: "1.25rem";
+    border-radius: 4;
+}
+
+.listStyles {
+    margin-bottom: 96;
+    padding-left: 0;
+}
+
+.listItemStyles {
+    font-weight: 300;
+    font-size: 24;
+    max-width: 560;
+    margin-bottom: 30;
+}
+
+.linkStyle {
+    color: "#8954A8";
+    font-weight: "bold";
+    font-size: 16;
+    vertical-align: "5%";
+}
+
+.docLinkStyle {
+    //...linkStyle;
+    list-style-type: "none";
+    margin-bottom: 24;
+}
+
+.descriptionStyle {
+    color: "#232129";
+    font-size: 14;
+    margin-top: 10;
+    margin-bottom: 0;
+    line-height: 1.25;
 }
