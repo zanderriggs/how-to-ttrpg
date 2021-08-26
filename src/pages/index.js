@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import "../styles/style.scss"
 
 // styles
@@ -83,7 +84,8 @@ const badgeStyle = {
 const links = [
   {
     text: "How To Grapple",
-    url: "",
+    url: "/grapple",
+    badge: false,
     description:
       "Grappling is fun and cool. It's fairly straight-forward, but sometimes we just have to make sure we remember how it works.",
     color: "#E95800",
@@ -91,8 +93,17 @@ const links = [
   {
     text: "Conditions",
     url: "",
+    badge: false,
     description:
       "There's a lot of conditions that a character can be subject to. Find them here.",
+    color: "#1099A8",
+  },
+  {
+    text: "Measuring Skill DCs",
+    url: "",
+    badge: false,
+    description:
+      "We all think we have an idea of what's difficult. But what's a challege?",
     color: "#1099A8",
   }
 ]
@@ -107,6 +118,9 @@ const IndexPage = () => {
         <br />
         <span style={headingAccentStyles}>— A Reference Guide to <br /> ~Doing Things~ </span>
       </h1>
+      <h2>
+        <Link to="/about">About</Link>
+      </h2>
       <p style={paragraphStyles, listItemStyles}>
         I just adjusted the auto-generated index.js file to be a super simple example of what the main page could look like. 
         idk if we want to have all the info here or link to other pages/domains. 
@@ -118,7 +132,7 @@ const IndexPage = () => {
             <span>
               <a
                 style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
+                href={link.url}
               >
                 {link.text}
               </a>
