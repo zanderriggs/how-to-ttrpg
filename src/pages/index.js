@@ -8,17 +8,21 @@ const pageStyles = {
   padding: 96,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
+
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
   maxWidth: 400,
 }
+
 const headingAccentStyles = {
   color: "#663399",
 }
+
 const paragraphStyles = {
   marginBottom: 48,
 }
+
 const codeStyles = {
   color: "#8A6534",
   padding: 4,
@@ -26,10 +30,12 @@ const codeStyles = {
   fontSize: "1.25rem",
   borderRadius: 4,
 }
+
 const listStyles = {
   marginBottom: 96,
   paddingLeft: 0,
 }
+
 const listItemStyles = {
   fontWeight: 300,
   fontSize: 24,
@@ -92,7 +98,7 @@ const links = [
   },
   {
     text: "Conditions",
-    url: "",
+    url: "/conditions",
     badge: false,
     description:
       "There's a lot of conditions that a character can be subject to. Find them here.",
@@ -121,10 +127,10 @@ const IndexPage = () => {
       <h2>
         <Link to="/about">About</Link>
       </h2>
-      <p style={paragraphStyles, listItemStyles}>
+      <p style={paragraphStyles}>
         I just adjusted the auto-generated index.js file to be a super simple example of what the main page could look like. 
         idk if we want to have all the info here or link to other pages/domains. 
-        But I figured we'd jsut start the thing.
+        But I figured we'd just start the thing.
       </p>
       <ul style={listStyles}>
         {links.map(link => (
