@@ -21,8 +21,8 @@ const links = [
     },
     {
         text: 'Measuring Skill DCs',
-        url: '',
-        badge: false,
+        url: '/difficulty',
+        badge: true,
         description: "We all think we have an idea of what's difficult. But what's a challege?",
         color: '#1099A8',
     },
@@ -36,7 +36,7 @@ const IndexPage = () => {
             <title>Home Page</title> {/* how/why does this work? lol */}
             <h1>How To TTRPG</h1>
             <h2 className="reference-title">
-                — A Reference Guide to <br /> ~Doing Things~{' '}
+                — A Reference Guide to <br /> ~Doing Things~
             </h2>
             <h3>
                 <Link to="/about">About</Link>
