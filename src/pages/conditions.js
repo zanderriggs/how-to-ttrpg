@@ -178,7 +178,7 @@ const ConditionsPage = () => {
             </h2>
             <p className="listItemStyles">These are all the Conditions.</p>
 
-            <ul className="listStyles">
+            <ul>
                 {links.map(link => (
                     <li key={link.url} className="listItemStyles" style={listItemStyles}>
                         <span>
