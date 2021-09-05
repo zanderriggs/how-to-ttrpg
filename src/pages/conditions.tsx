@@ -168,7 +168,7 @@ const links = [
     },
 ];
 
-const ConditionsPage = () => {
+const ConditionsPage = (): React.ReactElement => {
     return (
         <main>
             <title>D&D Conditions</title>

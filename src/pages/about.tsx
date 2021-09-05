@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import '../styles/style.scss';
 
-const AboutPage = () => {
+const AboutPage = (): React.ReactElement => {
     return (
         <main>
             <title>About</title>
