@@ -30,8 +30,6 @@
         "react-hooks"
     ],
     "rules": {
-        "no-anonymous-exports-page-templates": "warn",
-        "limited-exports-page-templates": "warn",
         "react/no-unescaped-entities": "warn",
         "prettier/prettier": ["error", {"endOfLine": "auto"}, { "usePrettierrc": true }]
     }
