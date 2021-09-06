@@ -14,6 +14,7 @@ module.exports = {
     },
     plugins: [
         'gatsby-plugin-sass',
+        `gatsby-plugin-mdx`,
         {
             resolve: 'gatsby-plugin-eslint',
             options: {
@@ -26,6 +27,10 @@ module.exports = {
                 // Any additional eslint-webpack-plugin options below
                 // ...
             },
+        },
+        {
+            // https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/
+            resolve: `gatsby-plugin-mdx`,
         },
     ],
 };
