@@ -1,6 +1,9 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
 import '../styles/style.scss';
+
+import * as React from 'react';
+
+import Layout from '../layout/page-layout';
+import { Link } from 'gatsby';
 
 // data
 const links = [
@@ -30,7 +33,7 @@ const links = [
 
 // markup
 const IndexPage = (): React.ReactElement => (
-    <main className="page-styles">
+    <Layout>
         <title>Home Page</title> {/* how/why does this work? lol */}
         <h1>How To TTRPG</h1>
         <h2 className="reference-title">
@@ -59,7 +62,7 @@ const IndexPage = (): React.ReactElement => (
                 </li>
             ))}
         </ul>
-    </main>
+    </Layout>
 );
 
 export default IndexPage;

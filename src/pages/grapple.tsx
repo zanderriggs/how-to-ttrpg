@@ -1,10 +1,13 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
 import '../styles/style.scss';
+
+import * as React from 'react';
+
+import Layout from '../layout/page-layout';
+import { Link } from 'gatsby';
 
 const GrapplePage = (): React.ReactElement => {
     return (
-        <main>
+        <Layout>
             <title>How To Grapple</title>
             <h1>How to Grapple</h1>
             <h2>
@@ -12,7 +15,7 @@ const GrapplePage = (): React.ReactElement => {
             </h2>
             <p>This is where we talk about how to grapple.</p>
             <p>It's a contested roll. Athletics (Aggressor) vs Athletics or Acrobatics (Defender)</p>
-        </main>
+        </Layout>
     );
 };
 

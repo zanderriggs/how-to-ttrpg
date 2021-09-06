@@ -1,6 +1,8 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
 import '../styles/style.scss';
+
+import * as React from 'react';
+
+import { Link } from 'gatsby';
 
 // markup
 const NotFoundPage = (): React.ReactElement => {
