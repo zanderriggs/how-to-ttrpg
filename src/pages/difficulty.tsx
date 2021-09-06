@@ -1,7 +1,10 @@
-import * as React from 'react';
-import { Link } from 'gatsby';
 import '../styles/style.scss';
+
+import * as React from 'react';
+
 import { DifficultyCheckTypeGroup } from '../types/dc-types';
+import Layout from '../layout/page-layout';
+import { Link } from 'gatsby';
 
 // data
 const DC_STANDARD: DifficultyCheckTypeGroup = [
@@ -57,7 +60,7 @@ const DC_TRACKING: DifficultyCheckTypeGroup = [
 
 const DifficultyPage = (): React.ReactElement => {
     return (
-        <main>
+        <Layout>
             <title>DCs</title>
             <h1>Setting DCs</h1>
             <h2>
@@ -82,7 +85,7 @@ const DifficultyPage = (): React.ReactElement => {
                     </li>
                 ))}
             </ul>
-        </main>
+        </Layout>
     );
 };
 
