@@ -1,60 +1,61 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import '../styles/style.scss';
+import { DifficultyCheckTypeGroup } from '../types/dc-types';
 
 // data
-const DC_STANDARD = [
+const DC_STANDARD: DifficultyCheckTypeGroup = [
     {
         text: 'Very easy',
-        dc:'5'
+        dc: '5',
     },
     {
         text: 'Easy',
-        dc:'10'
+        dc: '10',
     },
     {
         text: 'Moderate',
-        dc:'15'
+        dc: '15',
     },
     {
         text: 'Hard',
-        dc:'20'
+        dc: '20',
     },
     {
         text: 'Very hard',
-        dc:'25'
+        dc: '25',
     },
     {
         text: 'Nearly impossible',
-        dc:'30'
-    }
+        dc: '30',
+    },
 ];
 
 // data
-const DC_TRACKING = [
+const DC_TRACKING: DifficultyCheckTypeGroup = [
     {
         text: 'Soft surface such as snow',
-        dc:'10'
+        dc: '10',
     },
     {
         text: 'Dirt or grass',
-        dc:'15'
+        dc: '15',
     },
     {
         text: 'Bare stone',
-        dc:'20'
+        dc: '20',
     },
     {
         text: 'Each day since the creature passed',
-        dc:'+5'
+        dc: '+5',
     },
     {
         text: 'The creature left a trail, such as blood',
-        dc:'-5'
-    }
+        dc: '-5',
+    },
 ];
 
-const DifficultyPage = () => {
+const DifficultyPage = (): React.ReactElement => {
     return (
         <main>
             <title>DCs</title>
@@ -67,7 +68,7 @@ const DifficultyPage = () => {
             <h2>Standard Skill DCs</h2>
             <ul>
                 {DC_STANDARD.map(item => (
-                    <li key={item.dc} className="listItemStyles">
+                    <li key={item.dc}>
                         <span>{item.text}</span> <span>{item.dc}</span>
                     </li>
                 ))}
@@ -76,12 +77,11 @@ const DifficultyPage = () => {
             <h2>Tracking Quarry DCs</h2>
             <ul>
                 {DC_TRACKING.map(item => (
-                    <li key={item.dc} className="listItemStyles">
+                    <li key={item.dc}>
                         <span>{item.text}</span> <span>{item.dc}</span>
                     </li>
                 ))}
             </ul>
-
         </main>
     );
 };
