@@ -2,61 +2,9 @@ import '../styles/style.scss';
 
 import * as React from 'react';
 
-import { DifficultyCheckTypeGroup } from '../types/dc-types';
 import Layout from '../layout/page-layout';
 import { Link } from 'gatsby';
-
-// data
-const DC_STANDARD: DifficultyCheckTypeGroup = [
-    {
-        text: 'Very easy',
-        dc: '5',
-    },
-    {
-        text: 'Easy',
-        dc: '10',
-    },
-    {
-        text: 'Moderate',
-        dc: '15',
-    },
-    {
-        text: 'Hard',
-        dc: '20',
-    },
-    {
-        text: 'Very hard',
-        dc: '25',
-    },
-    {
-        text: 'Nearly impossible',
-        dc: '30',
-    },
-];
-
-// data
-const DC_TRACKING: DifficultyCheckTypeGroup = [
-    {
-        text: 'Soft surface such as snow',
-        dc: '10',
-    },
-    {
-        text: 'Dirt or grass',
-        dc: '15',
-    },
-    {
-        text: 'Bare stone',
-        dc: '20',
-    },
-    {
-        text: 'Each day since the creature passed',
-        dc: '+5',
-    },
-    {
-        text: 'The creature left a trail, such as blood',
-        dc: '-5',
-    },
-];
+import { DC_STANDARD, DC_TRACKING, DC_TOOLS } from '../data/difficulty-data';
 
 const DifficultyPage = (): React.ReactElement => {
     return (
@@ -85,6 +33,22 @@ const DifficultyPage = (): React.ReactElement => {
                     </li>
                 ))}
             </ul>
+
+            <h2>Tool Kit DCs</h2>
+            <div>
+                {DC_TOOLS.map(tool => (
+                    <div key={tool.name}>
+                        <h3>{tool.name}</h3>
+                        <ul>
+                            {tool.dcs.map((dc, index) => (
+                                <li key={index}>
+                                    <span>{dc.text}</span> <span>{dc.difficulty}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
+            </div>
         </Layout>
     );
 };
