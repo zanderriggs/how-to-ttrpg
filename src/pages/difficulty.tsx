@@ -38,13 +38,11 @@ const DifficultyPage = (): React.ReactElement => {
             <div>
                 {DC_TOOLS.map(tool => (
                     <div key={tool.name}>
-                        <h2>{tool.name}</h2>
+                        <h3>{tool.name}</h3>
                         <ul>
                             {tool.dcs.map((dc, index) => (
                                 <li key={index}>
-                                    <span>
-                                        {dc.text} {dc.difficulty}
-                                    </span>
+                                    <span>{dc.text}</span> <span>{dc.difficulty}</span>
                                 </li>
                             ))}
                         </ul>
