@@ -29,12 +29,19 @@ const links = [
         description: "We all think we have an idea of what's difficult. But what's a challege?",
         color: '#1099A8',
     },
+    {
+        text: 'Breaking Things',
+        url: '/breaking-things',
+        badge: true,
+        description: "Objects need stats if we're going to break them. Here's the stats!",
+        color: '#1099A8',
+    },
 ];
 
 // markup
 const IndexPage = (): React.ReactElement => (
     <Layout>
-        <title>Home Page</title> {/* how/why does this work? lol */}
+        <title>Home Page</title>
         <h1>How To TTRPG</h1>
         <h2 className="reference-title">
             — A Reference Guide to <br /> ~Doing Things~

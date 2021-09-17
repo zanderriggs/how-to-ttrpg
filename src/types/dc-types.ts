@@ -11,7 +11,7 @@ export type BreakACDifficultyType = {
 export type BreakHPDifficultyType = {
     text: string;
     fragile: string;
-    resiliant: string;
+    resilient: string;
 };
 
 export type ToolCheckType = {
