@@ -23,14 +23,29 @@ p {
   margin-bottom: 48px;
 }
 
+svg {
+  min-width: 25px;
+}
+
+button {
+  border: 0 none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
 ul,
 ol {
   margin-bottom: 96px;
   padding-left: 0;
 }
 
+nav {
+  margin: 0;
+}
+
 li {
-  font-weight: 300px;
+  font-weight: 300;
   font-size: 24px;
   max-width: 560px;
   margin-bottom: 30px;
