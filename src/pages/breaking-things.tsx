@@ -15,22 +15,46 @@ const DifficultyPage = (): React.ReactElement => (
             <Link to="/">Home</Link>
         </h2>
         <h2>Object Armor Class</h2>
-        <ul>
+        <tbody>
+            <tr>
+                <td>Material</td>
+                <td>AC</td>
+            </tr>
             {OBJECT_BREAK_AC_INFO.map(item => (
-                <li key={item.text}>
-                    <span>{item.text}</span> <span>{item.ac}</span>
-                </li>
+                <tr key={item.text}>
+                    <td className="break-table-cell">
+                        <span>{item.text}</span>
+                    </td>
+                    <td className="break-table-cell">
+                        <span>{item.ac}</span>
+                    </td>
+                </tr>
             ))}
-        </ul>
+        </tbody>
 
         <h2>Object Hit Points</h2>
-        <ul>
+        <tbody>
+            <tr>
+                <td>Object Size</td>
+                <td>Fragile</td>
+                <td>Resilient</td>
+            </tr>
             {OBJECT_BREAK_HP_INFO.map(item => (
-                <li key={item.text}>
-                    <span>{item.text}</span> <span>{item.fragile}</span> <span>{item.resilient}</span>
-                </li>
+                <tr key={item.text}>
+                    <td className="break-table-cell">
+                        <span>{item.text}</span>
+                    </td>
+                    <td className="break-table-cell">
+                        <span>
+                            {item.fragile.avg}({item.fragile.die.num}d{item.fragile.die.sides})
+                        </span>
+                    </td>
+                    <td className="break-table-cell">
+                        {item.resilient.avg}({item.resilient.die.num}d{item.resilient.die.sides})
+                    </td>
+                </tr>
             ))}
-        </ul>
+        </tbody>
         <p></p>
     </Layout>
 );

@@ -3,15 +3,26 @@ export type DifficultyCheckType = {
     dc: string;
 };
 
+export type Die = {
+    num: number;
+    sides: number;
+};
+
 export type BreakACDifficultyType = {
     text: string;
-    ac: string;
+    ac: number;
 };
 
 export type BreakHPDifficultyType = {
     text: string;
-    fragile: string;
-    resilient: string;
+    fragile: {
+        avg: number;
+        die: Die;
+    };
+    resilient: {
+        avg: number;
+        die: Die;
+    };
 };
 
 export type ToolCheckType = {
