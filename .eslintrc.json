@@ -30,7 +30,12 @@
         "react-hooks"
     ],
     "rules": {
-        "react/no-unescaped-entities": "warn",
+        "react/no-unescaped-entities": ["warn", {"forbid": [">", "}"]}],
         "prettier/prettier": ["error", {"endOfLine": "auto"}, { "usePrettierrc": true }]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }

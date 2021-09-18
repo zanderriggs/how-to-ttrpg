@@ -34,7 +34,7 @@ const links = [
 // markup
 const IndexPage = (): React.ReactElement => (
     <Layout>
-        <title>Home Page</title> {/* how/why does this work? lol */}
+        <title>Home Page</title>
         <h1>How To TTRPG</h1>
         <h2 className="reference-title">
             — A Reference Guide to <br /> ~Doing Things~
