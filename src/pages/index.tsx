@@ -29,6 +29,13 @@ const links = [
         description: "We all think we have an idea of what's difficult. But what's a challege?",
         color: '#1099A8',
     },
+    {
+        text: 'Breaking Things',
+        url: '/breaking-things',
+        badge: true,
+        description: "Objects need stats if we're going to break them. Here's the stats!",
+        color: '#1099A8',
+    },
 ];
 
 // markup
