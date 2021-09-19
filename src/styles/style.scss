@@ -48,3 +48,39 @@
 .xp-table {
   text-align: center;
 }
+
+.navigation-list {
+  margin: 0;
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s;
+  max-width: 200px;
+  background: #ffffff;
+  border-right: 1px solid #111111;
+  height: 100%;
+  padding: 15px;
+  user-select: none;
+
+  &.hide-menu {
+    margin-left: -500px;
+  }
+
+  &.show-menu {
+    margin-left: 0;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .nav-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    svg {
+      height: 20px;
+    }
+  }
+}

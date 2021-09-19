@@ -7,11 +7,10 @@ const path = require('path');
 // gatsby/src/utils/eslint-rules
 const gatsbyRequiredRules = path.join(process.cwd(), 'node_modules', 'gatsby', 'dist', 'utils', 'eslint-rules');
 
+const metadata = require('./configuration/site-metadata');
+
 module.exports = {
-    siteMetadata: {
-        siteUrl: 'https://www.yourdomain.tld',
-        title: 'how-to-ttrpg',
-    },
+    siteMetadata: { ...metadata },
     plugins: [
         'gatsby-plugin-sass',
         `gatsby-plugin-mdx`,
