@@ -2,6 +2,7 @@ import '../styles/style.scss';
 
 import * as React from 'react';
 
+import { Die } from '../components/die';
 import Layout from '../layout/page-layout';
 import { Link } from 'gatsby';
 
@@ -49,6 +50,11 @@ const IndexPage = (): React.ReactElement => (
         <h3>
             <Link to="/about">About</Link>
         </h3>
+        <div className="testing">
+            Testing the die here!!
+            <Die die={{ num: 1, size: 8 }} size={12} />
+            <Die die={{ num: 1, size: 4 }} size={12} />
+        </div>
         <p>
             I just adjusted the auto-generated index.js file to be a super simple example of what the main page could
             look like. idk if we want to have all the info here or link to other pages/domains. But I figured we'd just

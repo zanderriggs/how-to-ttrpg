@@ -3,7 +3,7 @@ export type DifficultyCheckType = {
     dc: string;
 };
 
-export type Die = {
+export type DieType = {
     num: number;
     sides: number;
 };
@@ -17,11 +17,11 @@ export type BreakHPDifficultyType = {
     text: string;
     fragile: {
         avg: number;
-        die: Die;
+        die: DieType;
     };
     resilient: {
         avg: number;
-        die: Die;
+        die: DieType;
     };
 };
 
