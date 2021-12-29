@@ -36,8 +36,11 @@ button {
 
 ul,
 ol {
-  margin-bottom: 30px;
-  padding-left: 0;
+  list-style-position: inside;
+  list-style-type: default;
+  list-style: default;
+  margin-bottom: 10px;
+  padding-left: 5;
 }
 
 nav {
@@ -45,9 +48,11 @@ nav {
 }
 
 li {
+  list-style-position: inside;
+  list-style: disc;
   font-weight: 300px;
   font-size: 16px;
-  max-width: 560px;
+  max-width: 700px;
   margin-bottom: 10px;
 }
 
