@@ -178,7 +178,7 @@ const ConditionsPage = (): React.ReactElement => {
                 {links.map(link => (
                     <li key={link.url} className="listItemStyles">
                         <span>
-                            <h3>{link.text}</h3>
+                            <h3 id={link.text}>{link.text}</h3>
 
                             <ul>
                                 {link.description.map((item, index) => (
