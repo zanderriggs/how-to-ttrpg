@@ -52,8 +52,9 @@ const IndexPage = (): React.ReactElement => (
         </h3>
         <div className="testing">
             Testing the die here!!
-            <Die die={{ num: 1, size: 8 }} size={12} />
-            <Die die={{ num: 1, size: 4 }} size={12} />
+            <Die die={{ num: 1, sides: 8 }} size={12} />
+            <Die die={{ num: 1, sides: 4 }} size={12} />
+            <Die die={{ num: 1, sides: 6 }} size={12} />
         </div>
         <p>
             I just adjusted the auto-generated index.js file to be a super simple example of what the main page could

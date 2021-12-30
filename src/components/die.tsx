@@ -7,7 +7,7 @@ import { DieType } from '../types/dc-types';
 export const Die = ({
     die,
     inline = true,
-    size = 16,
+    size = 16, // die scale on the page. not the "size/type/shape" of the die
 }: {
     die: DieType;
     size?: number;
@@ -19,6 +19,12 @@ export const Die = ({
         switch (die.sides) {
             case 2:
             case 6:
+                return (
+                    <>
+                        <div className="cube-top"></div>
+                        <div className="cube-left"></div>
+                    </>
+                );
             case 10:
             case 12:
             case 20:

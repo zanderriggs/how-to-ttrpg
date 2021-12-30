@@ -6,6 +6,12 @@
   border-bottom: calc(var(--die-size) * 0.5) solid $color;
 }
 
+@mixin squareSide($width, $color) {
+  width: 0;
+  height: 0;
+  background-color: $color;
+}
+
 $faceColor: #e6e6e6;
 $sideColor: #cccccc;
 
@@ -62,4 +68,22 @@ $sideColor: #cccccc;
   top: calc(var(--die-size) * 0.3125);
   width: 100%;
   text-align: center;
+}
+
+.cube-top {
+  @include squareSide(var(--die-size), $faceColor);
+
+  height: calc(var(--die-size) * 1.75);
+  width: calc(var(--die-size) * 1.75);
+}
+
+.cube-left {
+  @include squareSide(var(--die-size), $sideColor);
+
+  position: absolute;
+  top: calc(var(--die-size) * -0.3);
+  left: calc(var(--die-size) * -0.42);
+  height: calc(var(--die-size) * 2.17);
+  width: calc(var(--die-size)/ 4);
+  transform: skew(60deg, -20deg) rotateZ(60deg);
 }
