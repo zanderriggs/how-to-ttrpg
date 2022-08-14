@@ -3,6 +3,7 @@ import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import App from './App';
+import { EpicSpells } from './pages/epic-spells';
 import GrapplePage from './pages/grapple';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -14,6 +15,7 @@ root.render(
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="grapple" element={<GrapplePage />} />
+            <Route path="epic" element={<EpicSpells />} />
         </Routes>
     </BrowserRouter>,
 );
