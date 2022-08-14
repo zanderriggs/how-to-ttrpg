@@ -1,3 +1,9 @@
+import { EpicLogo } from '../icons/epic';
+
 export const EpicSpells = () => {
-    return <div>EPIC</div>;
+    return (
+        <div>
+            <EpicLogo />
+        </div>
+    );
 };

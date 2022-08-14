@@ -1,7 +1,12 @@
 @import './defaults';
+@import './variables';
+
+body {
+  background-color: $backgroundColor;
+}
 
 .page-styles {
-  color: #232129;
+  color: $primaryFontColor;
   padding: 96px;
 }
 
@@ -18,7 +23,7 @@
 }
 
 .description {
-  color: #232129;
+  color: $primaryFontColor;
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 0;
