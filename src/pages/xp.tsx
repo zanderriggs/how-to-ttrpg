@@ -1,12 +1,11 @@
 import * as React from 'react';
 
-import Layout from '../layout/page-layout';
 import { XP_DATA } from '../data/xp-data';
 import { XpLevelType } from '../types/xp-types';
 
 const XpPage = (): React.ReactElement => {
     return (
-        <Layout>
+        <>
             <title>XP Progression Table</title>
             <p>
                 The Character Advancement table summarizes the XP you need to advance in levels from level 1 through
@@ -29,7 +28,7 @@ const XpPage = (): React.ReactElement => {
                     ))}
                 </tbody>
             </table>
-        </Layout>
+        </>
     );
 };
 

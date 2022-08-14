@@ -3,7 +3,7 @@ import '../styles/style.scss';
 import * as React from 'react';
 
 import { Die } from '../components/die';
-import Layout from '../layout/page-layout';
+import { Link } from 'react-router-dom';
 
 // data
 const links = [
@@ -40,7 +40,7 @@ const links = [
 
 // markup
 const IndexPage = (): React.ReactElement => (
-    <Layout>
+    <>
         <title>Home Page</title>
         <h1>How To TTRPG</h1>
         <h2 className="reference-title">
@@ -63,7 +63,7 @@ const IndexPage = (): React.ReactElement => (
             {links.map(link => (
                 <li key={link.url} style={{ color: link.color }}>
                     <span>
-                        <a href={link.url}>{link.text}</a>
+                        <Link to={link.url}>{link.text}</Link>
                         {link.badge && (
                             <span className="new-badge" aria-label="New Badge">
                                 NEW!
@@ -74,7 +74,7 @@ const IndexPage = (): React.ReactElement => (
                 </li>
             ))}
         </ul>
-    </Layout>
+    </>
 );
 
 export default IndexPage;

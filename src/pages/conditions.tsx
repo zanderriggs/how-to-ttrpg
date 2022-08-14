@@ -2,8 +2,6 @@ import '../styles/style.scss';
 
 import * as React from 'react';
 
-import Layout from '../layout/page-layout';
-
 // data
 const links = [
     {
@@ -165,7 +163,7 @@ const links = [
 
 const ConditionsPage = (): React.ReactElement => {
     return (
-        <Layout>
+        <>
             <title>D&D Conditions</title>
             <h1>Conditions</h1>
             {/* <h2>
@@ -188,7 +186,7 @@ const ConditionsPage = (): React.ReactElement => {
                     </li>
                 ))}
             </ul>
-        </Layout>
+        </>
     );
 };
 

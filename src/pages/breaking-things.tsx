@@ -4,11 +4,9 @@ import * as React from 'react';
 
 import { OBJECT_BREAK_AC_INFO, OBJECT_BREAK_HP_INFO } from '../data/breaking-things-data';
 
-import Layout from '../layout/page-layout';
-
 //markup
-const DifficultyPage = (): React.ReactElement => (
-    <Layout>
+const BreakingThings = (): React.ReactElement => (
+    <>
         <title>Breaking Things</title>
         <h1>Breaking Things</h1>
         {/* <h2>
@@ -56,7 +54,7 @@ const DifficultyPage = (): React.ReactElement => (
             ))}
         </tbody>
         <p></p>
-    </Layout>
+    </>
 );
 
-export default DifficultyPage;
+export default BreakingThings;

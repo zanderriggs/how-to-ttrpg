@@ -4,11 +4,9 @@ import * as React from 'react';
 
 import { DC_STANDARD, DC_TOOLS, DC_TRACKING } from '../data/difficulty-data';
 
-import Layout from '../layout/page-layout';
-
 const DifficultyPage = (): React.ReactElement => {
     return (
-        <Layout>
+        <>
             <title>DCs</title>
             <h1>Setting DCs</h1>
             {/* <h2>
@@ -49,7 +47,7 @@ const DifficultyPage = (): React.ReactElement => {
                     </div>
                 ))}
             </div>
-        </Layout>
+        </>
     );
 };
 
