@@ -2,8 +2,6 @@ import '../styles/style.scss';
 
 import * as React from 'react';
 
-import { Link } from 'gatsby';
-
 // markup
 const NotFoundPage = (): React.ReactElement => {
     return (
@@ -26,7 +24,7 @@ const NotFoundPage = (): React.ReactElement => {
                     </>
                 ) : null}
                 <br />
-                <Link to="/">Go home</Link>.
+                {/* <Link to="/">Go home</Link>. */}
             </p>
         </main>
     );

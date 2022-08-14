@@ -2,18 +2,18 @@ import '../styles/style.scss';
 
 import * as React from 'react';
 
+import { DC_STANDARD, DC_TOOLS, DC_TRACKING } from '../data/difficulty-data';
+
 import Layout from '../layout/page-layout';
-import { Link } from 'gatsby';
-import { DC_STANDARD, DC_TRACKING, DC_TOOLS } from '../data/difficulty-data';
 
 const DifficultyPage = (): React.ReactElement => {
     return (
         <Layout>
             <title>DCs</title>
             <h1>Setting DCs</h1>
-            <h2>
+            {/* <h2>
                 <Link to="/">Home</Link>
-            </h2>
+            </h2> */}
             <p></p>
 
             <h2>Standard Skill DCs</h2>

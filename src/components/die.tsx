@@ -15,7 +15,7 @@ export const Die = ({
 }): React.ReactElement => {
     const containerClass = `die-container d${die.sides} ${inline ? 'inline-die' : ''}`;
 
-    const getDie = (): React.ReactElement => {
+    const getDie = (): React.ReactElement | undefined => {
         switch (die.sides) {
             case 2:
             case 6:
