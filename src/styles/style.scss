@@ -1,17 +1,11 @@
 @import './defaults';
-@import './variables';
 
 body {
   background-color: $backgroundColor;
 }
 
-.page-styles {
-  color: $primaryFontColor;
-  padding: 96px;
-}
-
 .reference-title {
-  color: '#663399';
+  color: #663399;
 }
 
 .codeStyles {
