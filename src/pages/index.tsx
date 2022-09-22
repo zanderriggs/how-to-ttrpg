@@ -38,6 +38,13 @@ const links = [
         description: "Objects need stats if we're going to break them. Here's the stats!",
         color: '#1099A8',
     },
+    {
+        text: 'XP Table',
+        url: '/xp',
+        badge: true,
+        description: "Here's the 5e XP table because no one ever knows these numbers",
+        color: '#1099A8',
+    },
 ];
 
 // markup

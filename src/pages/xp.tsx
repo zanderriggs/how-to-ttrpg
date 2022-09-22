@@ -9,6 +9,7 @@ const XpPage = (): React.ReactElement => {
     return (
         <>
             <title>XP Progression Table</title>
+            <h2>5e XP Table</h2>
             <p>
                 The Character Advancement table summarizes the XP you need to advance in levels from level 1 through
                 level 20, and the proficiency bonus for a character of that level. Consult the information in your
