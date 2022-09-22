@@ -36,6 +36,13 @@ const links = [
         description: "Objects need stats if we're going to break them. Here's the stats!",
         color: '#1099A8',
     },
+    {
+        text: 'Epic Spells Things',
+        url: '/epic',
+        badge: true,
+        description: "Knowing magic is cool This'll make you cooler.",
+        color: '#1099A8',
+    },
 ];
 
 // markup
