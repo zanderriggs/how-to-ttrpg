@@ -10,6 +10,12 @@
         "selector-no-qualifying-type": true,
         "selector-combinator-space-after": "always",
         "selector-attribute-quotes": "always",
+        "selector-class-pattern": [
+            "^([_a-z][a-z0-9]*)(-[a-z0-9]+)*$",
+            {
+              "message": "Expected class selector to be kebab-case"
+            }
+        ],
         "selector-attribute-operator-space-before": "never",
         "selector-attribute-operator-space-after": "never",
         "selector-attribute-brackets-space-inside": "always",

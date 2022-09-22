@@ -2,7 +2,6 @@ import './index.css';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import App from './App';
 import BreakingThings from './pages/breaking-things';
 import ConditionsPage from './pages/conditions';
 import DifficultyPage from './pages/difficulty';
@@ -11,7 +10,6 @@ import GrapplePage from './pages/grapple';
 import IndexPage from './pages';
 import Layout from './layout/page-layout';
 import NotFoundPage from './pages/404';
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 
