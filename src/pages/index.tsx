@@ -5,6 +5,8 @@ import * as React from 'react';
 import { Die } from '../components/die';
 import { Link } from 'react-router-dom';
 
+import styles from './index.module.scss';
+
 // data
 const links = [
     {
@@ -36,6 +38,13 @@ const links = [
         description: "Objects need stats if we're going to break them. Here's the stats!",
         color: '#1099A8',
     },
+    {
+        text: 'XP Table',
+        url: '/xp',
+        badge: true,
+        description: "Here's the 5e XP table because no one ever knows these numbers",
+        color: '#1099A8',
+    },
 ];
 
 // markup
@@ -43,7 +52,7 @@ const IndexPage = (): React.ReactElement => (
     <>
         <title>Home Page</title>
         <h1>How To TTRPG</h1>
-        <h2 className="reference-title">
+        <h2 className={styles.referenceTitle}>
             — A Reference Guide to <br /> ~Doing Things~
         </h2>
         {/* <h3>
@@ -65,11 +74,11 @@ const IndexPage = (): React.ReactElement => (
                     <span>
                         <Link to={link.url}>{link.text}</Link>
                         {link.badge && (
-                            <span className="new-badge" aria-label="New Badge">
+                            <span className={styles.newBadge} aria-label="New Badge">
                                 NEW!
                             </span>
                         )}
-                        <p className="description">{link.description}</p>
+                        <p className={styles.description}>{link.description}</p>
                     </span>
                 </li>
             ))}
