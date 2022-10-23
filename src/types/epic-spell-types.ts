@@ -1,4 +1,5 @@
 export type EpicSpellSeed = {
+    id: number;
     name: string;
     dc: number;
     components: [string, string, string?];
