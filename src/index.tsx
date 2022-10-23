@@ -12,6 +12,7 @@ import Layout from './layout/page-layout';
 import NotFoundPage from './pages/404';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
+import XpPage from './pages/xp';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLDivElement);
 root.render(
@@ -22,8 +23,9 @@ root.render(
                 <Route path="grapple" element={<GrapplePage />} />
                 <Route path="epic" element={<EpicSpells />} />
                 <Route path="conditions" element={<ConditionsPage />} />
-                <Route path="break-things" element={<BreakingThings />} />
+                <Route path="breaking-things" element={<BreakingThings />} />
                 <Route path="difficulty" element={<DifficultyPage />} />
+                <Route path="xp" element={<XpPage />} />
             </Route>
             <Route path="*">
                 <Route element={<NotFoundPage />} />

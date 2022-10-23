@@ -3,6 +3,7 @@
 
 body {
   font-family: OpenSans, sans-serif;
+  background-color: $backgroundColor;
 }
 
 h1,
@@ -46,7 +47,7 @@ nav {
 }
 
 li {
-  font-weight: 300px;
+  font-weight: 300;
   font-size: 16px;
   max-width: 700px;
   margin-bottom: 10px;
