@@ -13,7 +13,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
     //     spellresist: 'yes',
     // },
     {
-        id: 1,
+        id: '1',
         name: 'afflict',
         dc: 14,
         components: ['v', 's'],
@@ -25,7 +25,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'yes',
     },
     {
-        id: 2,
+        id: '2',
         name: 'afflict',
         dc: 14,
         components: ['v', 's'],
@@ -37,7 +37,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'yes',
     },
     {
-        id: 3,
+        id: '3',
         name: 'animate',
         dc: 25,
         components: ['v', 's'],
@@ -49,7 +49,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'no',
     },
     {
-        id: 4,
+        id: '4',
         name: 'animatedead',
         dc: 23,
         components: ['v', 's'],
@@ -61,7 +61,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'no',
     },
     {
-        id: 5,
+        id: '5',
         name: 'armor',
         dc: 14,
         components: ['v', 's'],
@@ -73,7 +73,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'yes',
     },
     {
-        id: 6,
+        id: '6',
         name: 'banish',
         dc: 27,
         components: ['v', 's'],
@@ -85,7 +85,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'yes',
     },
     {
-        id: 7,
+        id: '7',
         name: 'compel',
         dc: 19,
         components: ['v', 'm'],
@@ -97,7 +97,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'yes',
     },
     {
-        id: 8,
+        id: '8',
         name: 'conceal',
         dc: 17,
         components: ['v', 'm'],
@@ -109,7 +109,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'no',
     },
     {
-        id: 9,
+        id: '9',
         name: 'conjure',
         dc: 21,
         components: ['v', 's'],
@@ -121,7 +121,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'no',
     },
     {
-        id: 10,
+        id: '10',
         name: 'contact',
         dc: 23,
         components: ['v', 's'],
@@ -133,7 +133,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'no',
     },
     {
-        id: 11,
+        id: '11',
         name: 'delude',
         dc: 14,
         components: ['v', 's'],
@@ -145,7 +145,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'no',
     },
     {
-        id: 12,
+        id: '12',
         name: 'destroy',
         dc: 29,
         components: ['v', 's'],
@@ -157,7 +157,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'yes',
     },
     {
-        id: 13,
+        id: '13',
         name: 'dispel',
         dc: 19,
         components: ['v', 's'],
@@ -169,7 +169,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'no',
     },
     {
-        id: 14,
+        id: '14',
         name: 'energy',
         dc: 0, // originally 19, but with the logic, it makes sense to set this to zero as an energy type will add 19
         components: ['v', 's'],
@@ -181,7 +181,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'yes',
     },
     {
-        id: 15,
+        id: '15',
         name: 'foresee',
         dc: 17,
         components: ['v', 's'],
@@ -191,7 +191,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         duration: 0,
     },
     {
-        id: 16,
+        id: '16',
         name: 'fortify',
         dc: 17,
         components: ['v', 's'],
@@ -203,7 +203,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'yes',
     },
     {
-        id: 17,
+        id: '17',
         name: 'heal',
         dc: 25,
         components: ['v', 's', 'df'],
@@ -215,7 +215,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'yes',
     },
     {
-        id: 18,
+        id: '18',
         name: 'life',
         dc: 27,
         components: ['v', 's', 'df'],
@@ -227,7 +227,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'yes',
     },
     {
-        id: 19,
+        id: '19',
         name: 'reflect',
         dc: 27,
         components: ['v', 's'],
@@ -237,7 +237,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         duration: 43200,
     },
     {
-        id: 20,
+        id: '20',
         name: 'reveal',
         dc: 19,
         components: ['v', 's'],
@@ -249,7 +249,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'no',
     },
     {
-        id: 21,
+        id: '21',
         name: 'slay',
         dc: 25,
         components: ['v', 's'],
@@ -261,7 +261,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'yes',
     },
     {
-        id: 22,
+        id: '22',
         name: 'summon',
         dc: 14,
         components: ['v', 's'],
@@ -273,18 +273,18 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'yes',
     },
     {
-        id: 23,
+        id: '23',
         name: 'transform',
         dc: 21,
         components: ['v', 's'],
         casting: 60,
         range: '300 feet',
-        target: '	One creature or inanimate, nonmagical object',
+        target: 'One creature or inanimate, nonmagical object',
         saving: 'fort',
         spellresist: 'yes',
     },
     {
-        id: 24,
+        id: '24',
         name: 'transport',
         dc: 27,
         components: ['v', 's'],
@@ -296,7 +296,7 @@ export const SPELL_SEEDS: EpicSpellSeedType = [
         spellresist: 'no',
     },
     {
-        id: 25,
+        id: '25',
         name: 'ward',
         dc: 14,
         components: ['v', 's'],
