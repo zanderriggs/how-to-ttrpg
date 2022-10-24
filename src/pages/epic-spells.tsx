@@ -18,7 +18,7 @@ export const EpicSpells = () => {
                     {SPELL_SEEDS.map(seed => (
                         <div key={seed.id}>
                             <span>
-                                <input type="checkbox" id={seed.id} name={'${seed.name}-checkbox'}></input>
+                                <input type="checkbox" id={seed.id} name={`${seed.name}-checkbox`}></input>
                             </span>{' '}
                             <span>{seed.name}</span>
                         </div>
