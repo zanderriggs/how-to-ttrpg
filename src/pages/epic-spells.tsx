@@ -1,5 +1,6 @@
 import { EpicLogo } from '../icons/epic';
 import { SPELL_SEEDS } from '../data/epic-spell-seed';
+import { getSpellSeedById } from '../services/epic-spells-services';
 
 import styles from './epicSpells.module.scss';
 
@@ -13,6 +14,9 @@ export const EpicSpells = () => {
                 </div>
             </header>
             <section>Create an epic spell.</section>
+            <section>
+                <input type="button" value="Click for spellseed" onClick={() => getSpellSeedById('1')}></input>
+            </section>
             <div>
                 <ul>
                     {SPELL_SEEDS.map(seed => (
