@@ -1,7 +1,7 @@
 import { EpicLogo } from '../icons/epic';
-import { SPELL_SEEDS } from '../data/epic-spell-seed';
 
 import styles from './epicSpells.module.scss';
+import { Afflict } from '../components/epic/Afflict';
 
 export const EpicSpells = () => {
     return (
@@ -13,18 +13,7 @@ export const EpicSpells = () => {
                 </div>
             </header>
             <section>Create an epic spell.</section>
-            <div>
-                <ul>
-                    {SPELL_SEEDS.map(seed => (
-                        <div key={seed.id}>
-                            <span>
-                                <input type="checkbox" id={seed.id} name={`${seed.name}-checkbox`}></input>
-                            </span>{' '}
-                            <span>{seed.name}</span>
-                        </div>
-                    ))}
-                </ul>
-            </div>
+            <Afflict modifyDifficultyCheck={num => console.log('nice', num)} />
         </>
     );
 };

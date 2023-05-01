@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+}
+
+.componentOptions {
+  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: all 250ms;
+}
+
+.showOptions {
+  display: block;
+  height: auto;
+}
+
+.digitText {
+  width: 32px;
+}
