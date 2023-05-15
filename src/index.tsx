@@ -16,22 +16,22 @@ import XpPage from './pages/xp';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLDivElement);
 root.render(
-    <BrowserRouter>
-        <Routes>
-            <Route element={<Layout />}>
-                <Route path="/" element={<IndexPage />} />
-                <Route path="grapple" element={<GrapplePage />} />
-                <Route path="epic" element={<EpicSpells />} />
-                <Route path="conditions" element={<ConditionsPage />} />
-                <Route path="breaking-things" element={<BreakingThings />} />
-                <Route path="difficulty" element={<DifficultyPage />} />
-                <Route path="xp" element={<XpPage />} />
-            </Route>
-            <Route path="*">
-                <Route element={<NotFoundPage />} />
-            </Route>
-        </Routes>
-    </BrowserRouter>,
+  <BrowserRouter>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<IndexPage />} />
+        <Route path="grapple" element={<GrapplePage />} />
+        <Route path="epic" element={<EpicSpells />} />
+        <Route path="conditions" element={<ConditionsPage />} />
+        <Route path="breaking-things" element={<BreakingThings />} />
+        <Route path="difficulty" element={<DifficultyPage />} />
+        <Route path="xp" element={<XpPage />} />
+      </Route>
+      <Route path="*">
+        <Route element={<NotFoundPage />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>,
 );
 
 // If you want to start measuring performance in your app, pass a function
