@@ -1,41 +1,57 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "jest": true
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "ignorePatterns": [
+    "node_modules",
+    "build",
+    "dist",
+    "public"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:prettier/recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:react/jsx-runtime"
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "prettier",
+    "react",
+    "react-hooks"
+  ],
+  "rules": {
+    "react/no-unescaped-entities": [
+      "warn",
+      {
+        "forbid": [
+          ">",
+          "}"
+        ]
+      }
     ],
-    "ignorePatterns": [
-      "node_modules",
-      "build",
-      "dist",
-      "public"
-    ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "prettier",
-        "react",
-        "react-hooks"
-    ],
-    "rules": {
-        "react/no-unescaped-entities": ["warn", {"forbid": [">", "}"]}],
-        "prettier/prettier": ["error", {"endOfLine": "auto"}, { "usePrettierrc": true }]
-    },
-    "settings": {
-        "react": {
-            "version": "detect"
-        }
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      },
+      {
+        "usePrettierrc": true
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
     }
+  }
 }
