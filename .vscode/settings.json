@@ -8,6 +8,6 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs":"active",
     "editor.codeActionsOnSave": {
-        "source.fixAll": true
+      "source.fixAll": "explicit"
     },
   }
